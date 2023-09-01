@@ -1,0 +1,7 @@
+{
+  "name": "apptodolistionic7",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
