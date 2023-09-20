@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button> <!-- cor no globals -->
+    </ion-buttons>
+    <ion-title>Detalhes da tarefa</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+  <ion-card>
+    <ion-card-header> <!--css no arquivo align items-->
+      <ion-img src="{{task.image}}"></ion-img>
+      <ion-card-title>{{task.title}}</ion-card-title>
+      <ion-card-subtitle>{{task.subtitle}}</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      {{task.description}}
+    </ion-card-content>
+  </ion-card>
+  
+  <ion-button size="block" [routerLink]="['/home']">
+    <ion-icon style="margin-right: 5px;" name="arrow-undo-outline"></ion-icon>Voltar
+  </ion-button>
+</ion-content>

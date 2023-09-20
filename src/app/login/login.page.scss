@@ -1,0 +1,14 @@
+.div-flex-center {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-login {
+    width: 90%;
+}
+
+ion-content {
+    --keyboard-offset: 0px!important;
+}

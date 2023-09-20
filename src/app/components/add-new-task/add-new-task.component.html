@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Nova tarefa
+    </ion-title>
+    <ion-button color="primary" (click)="close()" slot="end" style="margin-right: 10px;">
+      <ion-icon slot="icon-only" name="close-outline"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-item>
+    <ion-input label="Título da tarefa" labelPlacement="floating" [(ngModel)]="task.title"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input label="Subtítulo da tarefa" labelPlacement="floating" [(ngModel)]="task.subtitle"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-textarea [(ngModel)]="task.description" label="Descrição da tarefa" labelPlacement="floating"></ion-textarea>
+  </ion-item>
+  <ion-item>
+    <ion-input label="URL da imagem" labelPlacement="floating" [(ngModel)]="task.image"></ion-input>
+  </ion-item>
+  <br>
+  <ion-button expand="block" (click)="close()">Salvar</ion-button>
+</ion-content>
