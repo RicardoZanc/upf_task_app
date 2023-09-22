@@ -1,3 +1,22 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu menuId="menu" contentId="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Menu Content</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item detail="true" [routerLink]="['/profile']">
+          <ion-icon slot="start" name="person-outline"></ion-icon>
+          <p>Perfil</p>
+        </ion-item>
+        <ion-item detail="true" [routerLink]="['/home']">
+          <ion-icon slot="start" name="document-outline"></ion-icon>
+          <p>Tarefas</p>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+    </ion-menu>
+  <ion-router-outlet id="main-content"></ion-router-outlet>
 </ion-app>

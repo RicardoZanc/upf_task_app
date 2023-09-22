@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { AddNewTaskComponent } from '../components/add-new-task/add-new-task.component';
-import { MenuComponent } from '../components/shared/menu/menu.component';
 import { ModalController, NavController } from '@ionic/angular';
 import { Router } from '@angular/router';
 
