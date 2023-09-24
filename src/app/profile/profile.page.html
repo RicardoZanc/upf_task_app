@@ -6,7 +6,7 @@
       </ion-buttons>
 
       <ion-title>
-        Profile
+        Perfil - Ricardo Zancan
       </ion-title>
       <ion-button color="primary" [routerLink]="['/login']" slot="end" style="margin-right: 10px;">
         <ion-icon slot="icon-only" name="power-outline"></ion-icon>
@@ -15,7 +15,34 @@
   </ion-header>
 
   <ion-content [fullscreen]="true">
-   
+   <div class="container">
+    <img src="../../assets/profile_img.jpeg" id="profile_img" alt="Imagem de perfil">
+   </div>
+
+  <ion-item>
+    <ion-text>
+      <p class="tittle">Nome</p>
+      <p class="content">Ricardo Zancan da Costa
+      </p>
+    </ion-text>
+  </ion-item>
+
+  <ion-item>
+    <ion-text>
+      <p class="tittle">E-mail</p>
+      <p class="content">ricardozancanc@gmail.com</p>
+    </ion-text>
+  </ion-item>
+
+  <ion-item>
+    <ion-text>
+      <p class="tittle">Biografia</p>
+      <p class="content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque ratione placeat sint consequuntur necessitatibus accusamus molestiae, doloribus suscipit tempore, quibusdam culpa tenetur sunt! Ipsa sunt corrupti, nobis provident maiores vitae?
+      </p>
+    </ion-text>
+  </ion-item>
+  
   </ion-content>
 
-</div>
+ </div>
